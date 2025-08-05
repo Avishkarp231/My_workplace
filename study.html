@@ -1,68 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>ACADS</title>
-        <link rel="icon" href="https://w7.pngwing.com/pngs/41/862/png-transparent-student-higher-education-study-skills-learning-products-people-logo-teacher.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>ACADS</title>
+    <link rel="icon" href="https://w7.pngwing.com/pngs/41/862/png-transparent-student-higher-education-study-skills-learning-products-people-logo-teacher.png">
     <style>
-         img:hover{
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Garamond', serif;
+            background-image: url("https://plus.unsplash.com/premium_photo-1683417272601-dbbfed0ed718?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-repeat: repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: auto;
+            color: white;
+        }
+
+        /* Title */
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: rgba(0, 0, 0, 0.877);
+            font-style:normal;
+            padding: 20px 0;
+            
+            margin-bottom: 40px;
+        }
+
+        /* Container for all subject blocks */
+        .study {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 0 40px 60px;
+        }
+
+        /* Individual subject card */
+        .s2 {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 300px;
+        }
+
+        .s2:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Images */
+        .s2 img {
+            height: 200px;
+            width: 100%;
+            border: 4px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            object-fit: cover;
+            opacity: 0.85;
+            transition: opacity 0.3s ease;
+        }
+
+        .s2 img:hover {
             opacity: 1;
         }
-        h1{
-            text-align: center;
-            color: rgba(0, 255, 179, 0.363);
-            font-style: oblique;
+
+        /* Subject titles */
+        .s2 p {
+            font-size: 1.3rem;
+            color: #f8f8f8; /* Orange */
+            margin-top: 10px;
         }
-        img{
-        height: 450px;
-        width: 540px;
-        border: 4px solid black;
-        padding: 20px;
-        opacity: 0.85;
-    }
-    .study{
-        align-self: center;
-    }
-    .s2{
-        float : left;
-    }
-    .s2 p{
-        text-align-last: center;
-        font-size: x-large;
-    }
-        body{
-        background-image: url("acad-bk.png");
-        background-repeat: repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: auto;
-        
-    }
+
+        /* Responsive: Stack cards on small screens */
+        @media (max-width: 768px) {
+            .study {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .s2 {
+                width: 80%;
+            }
+        }
     </style>
-    <body>
-            <div class = "study">
-                <div class = "s2">
-                    <a href="https://sites.google.com/view/man001/home">
-                        <img src="math.png" alt="mathematics"></a>
-                        <p>MAN-001</p>
-                </div>
-            
-                <div class = "s2">
-                    <a href="http://bala.cs.faculty.iitr.ac.in/OOPS/csn103.html">
-                        <img src="Java-Emblem.jpg" alt="java"></a>
-                        <p>CSN-103</p>
-                </div>
-                <div class = "s2">
-                    <a href="https://iitracin-my.sharepoint.com/personal/bhanuprakashv_ce_iitr_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbhanuprakashv%5Fce%5Fiitr%5Fac%5Fin%2FDocuments%2FIIT%20Roorkee%2FClass%20Work%2F2021%2FCEN%20105%2FStudents">
-                        <img src="environment.png" alt="env"></a>
-                        <p>CEN-105</p>
-                </div>
-                <div class = "s2">
-                    <a href="https://onedrive.live.com/view.aspx?resid=D5AC67117CE511A5!362&authkey=!APJyZgw9vdq2MRI">
-                        <img src="phys.jpg" alt="phy"></a>
-                        <p>PHN-005</p>
-                </div>
-            </div>
-            
-    </body>
+</head>
+<body>
+    <h1 >ACADS</h1>
+
+    <div class="study">
+        <div class="s2">
+            <a href="https://sites.google.com/view/man001/home">
+                <img src="math.png" alt="mathematics">
+            </a>
+            <p>MAN-001</p>
+        </div>
+
+        <div class="s2">
+            <a href="http://bala.cs.faculty.iitr.ac.in/OOPS/csn103.html">
+                <img src="Java-Emblem.jpg" alt="java">
+            </a>
+            <p>CSN-103</p>
+        </div>
+
+        <div class="s2">
+            <a href="https://iitracin-my.sharepoint.com/personal/bhanuprakashv_ce_iitr_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbhanuprakashv%5Fce%5Fiitr%5Fac%5Fin%2FDocuments%2FIIT%20Roorkee%2FClass%20Work%2F2021%2FCEN%20105%2FStudents">
+                <img src="environment.png" alt="environment">
+            </a>
+            <p>CEN-105</p>
+        </div>
+
+        <div class="s2">
+            <a href="https://onedrive.live.com/view.aspx?resid=D5AC67117CE511A5!362&authkey=!APJyZgw9vdq2MRI">
+                <img src="phys.jpg" alt="physics">
+            </a>
+            <p>PHN-005</p>
+        </div>
+    </div>
+</body>
 </html>
