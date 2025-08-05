@@ -1,61 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>
-        My workplace
-    </title>
+    <meta charset="UTF-8">
+    <title>My Workplace</title>
     <link rel="icon" href="https://w7.pngwing.com/pngs/219/692/png-transparent-computer-icons-icon-design-businessperson-desk-work-experience-text-logo-monochrome.png">
-    <h1>WHAT YOU WANA DO?</h1>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Garamond', serif;
+            background-image: url("https://img.freepik.com/premium-photo/digital-technology-concept-background_769134-157.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgba(0, 255, 136, 0.9);
+            font-size: 3em;
+            padding: 20px;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .s1 {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .s1:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        img {
+            height: 250px;
+            width: 350px;
+            border: 4px solid black;
+            border-radius: 10px;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+
+        img:hover {
+            opacity: 1;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: rgb(255, 165, 47);
+        }
+
+        @media (max-width: 768px) {
+            img {
+                width: 90%;
+                height: auto;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
-<style>
-    img:hover{
-        opacity: 1;
-    }
-    body{
-        background-image: url("wp7898762-boredom-wallpapers.jpg");
-        background-position: center;
-        background-attachment: fixed;
-    }
-    h1{
-        color: rgba(0, 255, 136, 0.897);
-        text-align-last: center;
-    }
-    img{
-        height: 350px;
-        width: 440px;
-        border: 4px solid black;
-        padding: 20px;
-        opacity: 0.90;
-    }
-    p{
-        font-family: Garamond;
-        font-size: x-large;
-        margin-left: 225px;
-        color: rgb(255, 165, 47);
-    }
-    .s1{
-        float :left;
-        margin-right: 6px;
-    }
-    
-    
-</style>
 <body>
-    
-        <div class = "s1">
+    <h1 style="font-size: 50px; color: rgb(232, 237, 235); text-align: center;">
+WHAT YOU WANA DO?</h1>
+
+    <div class="container">
+        <div class="s1">
             <a href="study.html">
-            <img src="https://www.how-to-study.com/images/study-skills-assessments.jpg" alt="study"></a>
-            <p>ACADS</p>
+                <img src="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg" alt="study">
+            </a>
+            <p style="color:rgb(232, 237, 235)">ACADS</p>
         </div>
-        <div class = "s1">
+        <div class="s1">
             <a href="anime.html">
-            <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/05/gojo-satoru-featured.jpg" alt="anime"></a>
-            <p>ANIME</p>
+                <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/05/gojo-satoru-featured.jpg" alt="anime">
+            </a>
+            <p style="color:rgb(232, 237, 235)">ANIME</p>
         </div>
-        <div class = "s1">
+        <div class="s1">
             <a href="cpp.html">
-            <img src="Top-10-Programming-Languages-to-Watch-Out-in-2019.png" alt="Codding"></a>
-            <p>Coding</p>
+                <img src="Top-10-Programming-Languages-to-Watch-Out-in-2019.png" alt="Coding">
+            </a>
+            <p style="color:rgb(232, 237, 235)">Coding</p>
         </div>
+    </div>
 </body>
 </html>
